@@ -3,8 +3,8 @@ from pyftpdlib.handlers import FTPHandler
 from pyftpdlib.servers import FTPServer
 
 authorizer = DummyAuthorizer() #lietotāju klase
-authorizer.add_user("rus_sud", "12345", "/home/russud/ftp", perm="elradfmw") #definē lietotāju
-authorizer.add_anonymous("/home/russud", perm="elradfmw") #nedefinēts lietotājs
+authorizer.add_user("elvish", "12345", "/home/elvish/ftp", perm="elradfmw") #definē lietotāju
+authorizer.add_anonymous("/home/elvish", perm="elradfmw") #nedefinēts lietotājs
 
 handler = FTPHandler #autorizācijas veids
 handler.authorizer = authorizer
